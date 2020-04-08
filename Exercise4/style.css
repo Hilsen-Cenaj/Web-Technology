@@ -1,0 +1,105 @@
+body{
+    margin: 0;
+    height: 100%;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    background: linear-gradient(white, #EFFBF8 20%);
+}
+
+.header{ 
+    grid-area: header;
+    text-align: center;
+}
+
+img{
+    border-radius: 5px;
+}
+
+.main-image{
+    border: 1px solid grey;
+    box-shadow: 1px 1px 10px grey;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.floatR-image{
+    border: 1px solid grey;
+    float: right;
+    box-shadow: 1px 1px 10px grey;
+}
+
+.floatL-image{
+    border: 1px solid grey;
+    float: left;
+    box-shadow: 1px 1px 10px grey;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(109, 109, 109);
+}
+
+a:hover{
+    text-decoration-line: underline;
+    color: black;
+}
+
+th{
+    padding: 5px;
+}
+
+.bar{
+    grid-area: bar;
+    background-color: white;
+}
+
+.menu{
+    grid-area: menu;
+    text-align: left;
+}
+
+.main{
+    grid-area: main;
+    background-color: white;
+    border: 1px solid #CEECF5;
+    padding: 10px 10px 10px 10px;
+}
+
+.footer{ 
+    grid-area: footer; 
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'bar bar bar bar bar menu'
+      'main main main main main menu'
+      'footer footer footer footer footer footer';
+}
+
+.grid-container > div{
+    margin-left: 10px;
+    padding: 5px 50px;
+    font-size: 15px;
+}
+
+.box{
+    padding: 10px;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px grey;
+}
+
+#main-box{
+    text-align: center;
+}
+
+#gamesAI-main{
+    
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: nowrap;
+}
