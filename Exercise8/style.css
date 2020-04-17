@@ -1,0 +1,75 @@
+@font-face{
+    font-family: myFont;
+    src:url("Comfortaa/Comfortaa-Regular.ttf") format("truetype");
+}
+
+html, body{
+    margin: 0;
+    height: 100%;
+    font-family: myFont;
+}
+
+.top-bar{
+    width: 100%;
+    overflow: hidden;
+    background-color: grey;
+    position: absolute;
+    top: 10px;
+    z-index: 2;
+}
+
+.top-bar a{
+    text-align: center;
+    display: inline-block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.main-img{
+    background-image: url("images/main.jpg");
+    height: 100%;
+
+    filter: blur(3px);
+    -webkit-filter: blur(3px); 
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container{
+    position: relative;
+    z-index: 3;
+}
+
+.header{ 
+    grid-area: header;
+    height: 100%;
+    text-align: center;
+}
+
+.main{
+    grid-area: main;
+    background-color: white;
+    display: flex;
+    flex-flow: column wrap;
+    justify-self: flex-start;
+}
+
+.footer{
+    grid-area: footer;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas:
+      'header header header header'
+      'bar bar bar bar'
+      'main main main main'
+      'footer footer footer footer';
+}
