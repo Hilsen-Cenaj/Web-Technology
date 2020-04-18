@@ -1,23 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="el">
 
-	<head>
-		<meta charset="UTF-8">
-        <title> Hilsen Cenaj </title>
-	</head>
-	
-	<body>
-        <h1>Technologies and Programming of Web Applications</h1>
-        <p>My name is Hilsen Cenaj and i am a senior student in Computer Science at AUEB with register number 3160239</p>
-        <ul>
-            <li><a href="Exercise2/index.html">HTML</a></li>
-            <li><a href="Exercise3/Exercise2_with_CSS/index.html">CSS</a></li>
-            <li><a href="Exercise4/index.html">Website Layout</a></li>
-            <li>Responsive Design</li>
-            <li>Inspect Element</li>
-            <li>JavaScript</li>
-            <li>Professionally Oriented Website</li>
-        </ul>
-	</body>
+    <head>
+        <meta charset="UTF-8">
+        <title> Αρχική Σελίδα </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
 
+    </head>
+    
+    <body>
+
+        <div class="header">
+            <div class="main-img"></div>
+
+                <div class="top-bar">
+                    <a href="">Αρχική</a>
+                    <a href="">Εμπειρίες</a>
+                    <a href="">Επικοινωνία</a>
+                </div>
+
+                <div class="container">
+                    <h1>Χίλσεν Τσενάι</h1>
+                    <h2>Καλώς Ήρθες στο Προσωπικό μου Portofolio</h2>
+                    <h2 id="soft-eng">Software Engineering</h2>
+
+                    <button id="down-btn" class="cn-btn">Περισσότερα</button>
+                </div>
+        </div>
+
+        <div class="main">
+            
+            <table>
+                <tr>
+                    <td>
+                        <h3>ΛΙΓΑ ΓΙΑ ΕΜΕΝΑ</h3>
+                        <p>
+                            Γεία σας, είμαι φοιτητής στο 4ο έτος φοίτησής μου στο Οικονομικό Πανεπιστήμιο Αθηνών (AUEB).
+                            Το κύριως πεδίο στο οποίο έχω αφοσιωθεί είναι το Software Engineering. 
+                        </p>
+                        <p>
+                            Στην Ιστοσελίδα (Portofolio) 
+                            μου μπορείτε να βρείτε και άλλες προσωπικές μου πληροφορίες όπως ενδιαφέροντα, εμπειρίες και
+                            τρόπους επικοινωνίας.
+                        </p>
+                    </td>
+                    <th>
+                        <a href="ps-img"><img id="ps-img" src="images/me.jpg" width="200" height="270" alt="Personal image"></a>
+                    </th>
+                    <td>
+                        <h3>ΠΡΟΣΩΠΙΚΕΣ ΠΛΗΡΟΦΟΡΙΕΣ</h3>
+                        <ul>
+                            <li>Όνομα: Χίλσεν Τσενάι</li>
+                            <li>Έτος Γέννησης: 28/02/1998</li>
+                            <li>E-mail: christsenaj@gmail.com</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <hr>
+        <div class="footer">
+            <p>
+                Copyright <img src="images/cr-icon.png" alt="cr-icon" width="15" height="15"> 2020 - Hilsen Cenaj
+            </p>
+        </div>
+
+        <script src="script.js" type="text/javascript"></script>
+
+    </body>
 </html>
