@@ -6,14 +6,50 @@
 html, body{
     margin: 0;
     height: 100%;
-    font-family: myFont;
+    font-family: myFont;  
+}
+
+h3{
+    color: rgb(74, 137, 255);
+}
+
+p{
+    color: rgb(82, 82, 82);
+}
+
+li{
+    color: rgb(82, 82, 82);
+}
+
+#soft-eng{
+    color: rgb(74, 137, 255);
+    text-shadow: 2px 2px white;
+}
+
+#ps-img{
+    border-radius: 5px;
+    border: 5px solid white;
+    box-shadow: 1px 1px 10px grey;
+}
+
+table{
+    width: 100%;
+    padding: 10px; 
+}
+
+td{
+    width: 30%;
 }
 
 .top-bar{
-    width: 100%;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
     overflow: hidden;
-    background-color: grey;
+    background-color: rgb(74, 137, 255);
     position: absolute;
+    display: block;
     top: 10px;
     z-index: 2;
 }
@@ -36,12 +72,39 @@ html, body{
 
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
 }
 
 .container{
+    width: 100%;
     position: relative;
-    z-index: 3;
+    position: absolute;
+    top: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 2;
+}
+
+.cn-btn{
+    background-color: white; 
+    color: rgb(74, 137, 255); 
+    border: 2px solid rgb(74, 137, 255);
+    border-radius: 5px;
+    padding: 10px 20px;
+    display: inline-block;
+    font-size: 20px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.cn-btn a{
+    text-decoration: none;
+}
+
+.cn-btn:hover{
+    background-color: rgb(74, 137, 255);
+    color: white;
 }
 
 .header{ 
@@ -52,24 +115,34 @@ html, body{
 
 .main{
     grid-area: main;
+    margin: 10px 10px;
+    padding: 50px;
     background-color: white;
     display: flex;
     flex-flow: column wrap;
     justify-self: flex-start;
 }
 
+.right{
+    grid-area: right;
+    display: flex;
+    margin: 10px 10px;
+    padding: 50px;
+}
+
 .footer{
     grid-area: footer;
+    font-size: 15px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
 }
 
 .grid-container{
+    height: 100%;
     display: grid;
     grid-template-areas:
-      'header header header header'
-      'bar bar bar bar'
-      'main main main main'
-      'footer footer footer footer';
+      'header header header header header'
+      'main main main right right'
+      'footer footer footer footer footer';
 }

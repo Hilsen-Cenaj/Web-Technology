@@ -1,0 +1,132 @@
+@font-face{
+    font-family: myFont;
+    src:url("Comfortaa/Comfortaa-Regular.ttf") format("truetype");
+}
+
+body{
+    margin: 0;
+    height: 100%;
+    font-family: myFont;
+    background: linear-gradient(white, #EFFBF8 20%);
+}
+
+img{
+    border-radius: 5px;
+}
+
+.main-image{
+    border: 1px solid grey;
+    box-shadow: 1px 1px 10px grey;
+    width: 70%;
+    height: auto;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(109, 109, 109);
+}
+
+a:hover{
+    text-decoration-line: underline;
+    color: black;
+    text-shadow: 1px;
+}
+
+th{
+    padding: 5px;
+}
+
+#font-icon{
+    float: right;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(187, 187, 187);
+}
+
+#font-icon:hover{
+    background-color: rgb(216, 216, 216);
+}
+
+#date{
+    text-align: left;
+    color: grey;
+}
+
+.header{ 
+    grid-area: header;
+    text-align: center;
+}
+
+.bar{
+    grid-area: bar;
+    background-color: white;
+    border: 1px solid #EFFBF8;
+    box-shadow: 1px 1px 10px #EFFBF8;
+    display: block;
+}
+
+.menu{
+    grid-area: menu;
+    text-align: left;
+    overflow: auto;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.main{
+    grid-area: main;
+    background-color: white;
+    display: flex;
+    flex-flow: column wrap;
+    justify-self: flex-start;
+}
+
+.footer{
+    grid-area: footer;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas:
+      'header header header header header header'
+      'bar bar bar bar bar menu'
+      'main main main main main menu'
+      'footer footer footer footer footer footer';
+}
+
+.grid-container > div{
+    margin-left: 10px;
+    padding: 5px 50px;
+    font-size: 15px;
+}
+
+.box{
+    padding: 10px;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px grey;
+}
+
+#main-box{
+    text-align: center;
+}
+
+@media only screen and (max-width:500px){
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(1fr,2fr));
+        grid-template-areas: 
+        'header header'
+        'bar bar'
+        'main main'
+        'menu menu'
+        'footer footer';
+    }
+}
